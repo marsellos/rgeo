@@ -212,32 +212,43 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Every example in the book is built with real, runnable R code. The complete, chapter-by-chapter code and the datasets that go with it are available to readers of the book.</p>
 <section id="a-taste-of-the-code" class="level2">
 <h2 class="anchored" data-anchor-id="a-taste-of-the-code">A taste of the code</h2>
-<p>Here is a short example of the kind of code you will write. It reads a CSV file of measurements and makes a simple plot.</p>
+<p>Here is a short example of the kind of code you will write. It makes two small lists of numbers and plots them, just like the first plot in Chapter 1.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Read a CSV of climate measurements</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>climate <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"climate.csv"</span>)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Look at the first few rows</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(climate)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot temperature over time</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(climate<span class="sc">$</span>year, climate<span class="sc">$</span>temperature,</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>     <span class="at">type =</span> <span class="st">"l"</span>,</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">"Year"</span>,</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>     <span class="at">ylab =</span> <span class="st">"Temperature"</span>,</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>     <span class="at">main =</span> <span class="st">"Temperature over time"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make two short lists of numbers (called vectors):</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># the day, and the rainfall in millimeters on each day</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>day <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>rainfall_mm <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">12</span>, <span class="dv">5</span>, <span class="dv">0</span>, <span class="dv">8</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Look at the rainfall values</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>rainfall_mm</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot rainfall against day</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(day, rainfall_mm)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>In the book, examples like this grow step by step into full Earth-data analyses, with each line explained for beginners.</p>
 </section>
 <section id="get-the-full-code" class="level2">
 <h2 class="anchored" data-anchor-id="get-the-full-code">Get the full code</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>New to GitHub? You do not need it to start learning. The entire first chapter is free on the <a href="./sample.html">Free Sample</a> page, with nothing to install or sign up for. The steps below are only for getting the complete code once you have the book.</p>
+</div>
+</div>
 <p>The complete, chapter-by-chapter code and datasets are available to readers of the book by request. Here is how it works:</p>
 <ol type="1">
-<li>Request access by email with your name, GitHub username, and proof of purchase (an order or receipt number). <a href="mailto:marsellos@gmail.com?subject=R-GEO%20book%20code%20access&amp;body=Name%3A%0AGitHub%20username%3A%0AOrder%20or%20receipt%20number%3A%0A" class="btn btn-primary">Request code access</a></li>
+<li>Request access by email with your name, GitHub username, and proof of purchase (an order or receipt number). <a href="mailto:amarsellos@gmail.com?subject=R-GEO%20book%20code%20access&amp;body=Name%3A%0AGitHub%20username%3A%0AOrder%20or%20receipt%20number%3A%0A" class="btn btn-primary">Request code access</a></li>
 <li>We verify the request and grant you access to a private GitHub repository with all of the code and data.</li>
 <li>You clone or download the repository whenever you need it.</li>
 </ol>
-<p>A free GitHub account is needed to receive access to the private repository. Readers without a GitHub account can email <a href="mailto:marsellos@gmail.com">marsellos@gmail.com</a> and we will send the code as a zip file instead.</p>
+<p>A free GitHub account is needed to receive access to the private repository. Readers without a GitHub account can email <a href="mailto:amarsellos@gmail.com">amarsellos@gmail.com</a> and we will send the code as a zip file instead.</p>
 
 
 </section>

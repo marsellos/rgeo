@@ -11,14 +11,14 @@
     "href": "code.html#a-taste-of-the-code",
     "title": "Code & Data",
     "section": "A taste of the code",
-    "text": "A taste of the code\nHere is a short example of the kind of code you will write. It reads a CSV file of measurements and makes a simple plot.\n\n# Read a CSV of climate measurements\nclimate &lt;- read.csv(\"climate.csv\")\n\n# Look at the first few rows\nhead(climate)\n\n# Plot temperature over time\nplot(climate$year, climate$temperature,\n     type = \"l\",\n     xlab = \"Year\",\n     ylab = \"Temperature\",\n     main = \"Temperature over time\")\n\nIn the book, examples like this grow step by step into full Earth-data analyses, with each line explained for beginners."
+    "text": "A taste of the code\nHere is a short example of the kind of code you will write. It makes two small lists of numbers and plots them, just like the first plot in Chapter 1.\n\n# Make two short lists of numbers (called vectors):\n# the day, and the rainfall in millimeters on each day\nday &lt;- 1:5\nrainfall_mm &lt;- c(0, 12, 5, 0, 8)\n\n# Look at the rainfall values\nrainfall_mm\n\n# Plot rainfall against day\nplot(day, rainfall_mm)\n\nIn the book, examples like this grow step by step into full Earth-data analyses, with each line explained for beginners."
   },
   {
     "objectID": "code.html#get-the-full-code",
     "href": "code.html#get-the-full-code",
     "title": "Code & Data",
     "section": "Get the full code",
-    "text": "Get the full code\nThe complete, chapter-by-chapter code and datasets are available to readers of the book by request. Here is how it works:\n\nRequest access by email with your name, GitHub username, and proof of purchase (an order or receipt number). Request code access\nWe verify the request and grant you access to a private GitHub repository with all of the code and data.\nYou clone or download the repository whenever you need it.\n\nA free GitHub account is needed to receive access to the private repository. Readers without a GitHub account can email marsellos@gmail.com and we will send the code as a zip file instead."
+    "text": "Get the full code\n\n\n\n\n\n\nTip\n\n\n\nNew to GitHub? You do not need it to start learning. The entire first chapter is free on the Free Sample page, with nothing to install or sign up for. The steps below are only for getting the complete code once you have the book.\n\n\nThe complete, chapter-by-chapter code and datasets are available to readers of the book by request. Here is how it works:\n\nRequest access by email with your name, GitHub username, and proof of purchase (an order or receipt number). Request code access\nWe verify the request and grant you access to a private GitHub repository with all of the code and data.\nYou clone or download the repository whenever you need it.\n\nA free GitHub account is needed to receive access to the private repository. Readers without a GitHub account can email amarsellos@gmail.com and we will send the code as a zip file instead."
   },
   {
     "objectID": "sample.html",
@@ -35,6 +35,13 @@
     "text": "Every analysis in this book uses real, public Earth and environmental data. This page keeps a copy of each dataset, organized by chapter, so you always have a way to get it.\nAfter each dataset there is a short table explaining every column: what it means, its units, and what was measured."
   },
   {
+    "objectID": "datasets.html#chapter-1-getting-started",
+    "href": "datasets.html#chapter-1-getting-started",
+    "title": "Datasets",
+    "section": "Chapter 1 — Getting started",
+    "text": "Chapter 1 — Getting started\n\nVolcano elevation grid (volcano)\nA height map of Maungawhau (Mt Eden), a volcano in Auckland, New Zealand, used in the very first plotting examples. The whole hill is laid out as a grid; each cell holds the ground height of a 10 m × 10 m patch — a height map, like a topographic model of the hill.\nDownload volcano.csv\n\nSource: Built into R (the datasets package). Terms: free to use and share.\nLayout: 87 rows × 61 columns of numbers; each number is the elevation in meters at that spot. There are no labels — position in the grid is the location."
+  },
+  {
     "objectID": "datasets.html#chapter-2-preparing-trustworthy-data",
     "href": "datasets.html#chapter-2-preparing-trustworthy-data",
     "title": "Datasets",
@@ -49,18 +56,18 @@
     "text": "Chapter 3 — Spatial structure\n\nVolcano database (Smithsonian, via plotly) — link only\nA worldwide list of volcanoes with their locations, heights, and types. The book uses it to plot volcanoes on a map.\nWe link to this one rather than re-host it: the data comes from the Smithsonian Global Volcanism Program, whose terms allow educational use with credit but not commercial redistribution, so the safest path is to fetch it from the original location.\n\nGet it from: plotly/datasets/volcano_db.csv\nOriginal source / please credit: Smithsonian Institution, Global Volcanism Program — https://volcano.si.edu\nTerms: Smithsonian Terms of Use (educational/non-commercial, with citation).\n\nColumns: Volcano Name, Country, Region, Latitude/Longitude (where it is, in degrees), Elev (summit height in meters), Type (e.g. shield, stratovolcano), Status, Last Known (most recent known eruption).\n\n\nLong Island counties (NYS GIS)\nThe map outlines of the four Long Island counties — Kings, Queens, Nassau, and Suffolk — used as the base map for the elevation and flood examples. Like tracing the coastline of the island onto paper.\nDownload nys_long_island_counties.geojson\n\nSource: New York State GIS Program Office, NYS Civil Boundaries (counties layer).\nTerms: Public New York State government data. Provided as-is, for planning and general use only, with no warranty (no formal open-data license is published, so we keep a copy here with credit).\nPlease credit: “New York State GIS Program Office, NYS Civil Boundaries.”\n\nColumns: NAME (county name), ABBREV (short code), plus the geometry (the actual boundary shape).\n\n\nElevation & bathymetry (elevatr / AWS Terrain Tiles) — reproduce on demand\nThe height of the land (and depth of the nearby seabed) across the region, used to build the digital elevation models, hillshades, and flood maps. Imagine the land covered by a fine checkerboard where every square stores the ground height there — the same idea as the depth numbers printed on the floor of a swimming pool.\nThis one is assembled on demand from open map tiles rather than stored as a single file. To recreate it, the book calls elevatr::get_elev_raster() for the area and detail level shown in the chapter.\n\nSource: AWS Terrain Tiles (built from public elevation data such as SRTM and the USGS National Elevation Dataset), retrieved via the elevatr R package.\nTerms: Open data; credit the underlying providers.\nPlease credit: “Elevation from AWS Terrain Tiles via the elevatr R package.”\nValues: ground (or seabed) height in meters; below sea level is negative."
   },
   {
+    "objectID": "datasets.html#chapter-4-time-series",
+    "href": "datasets.html#chapter-4-time-series",
+    "title": "Datasets",
+    "section": "Chapter 4 — Time series",
+    "text": "Chapter 4 — Time series\nChapter 4 introduces time-series methods (trends, seasonal cycles, and how values relate to their own past) using a small made-up (simulated) temperature and humidity series created right in the chapter, so there is no separate file to download. The same methods apply directly to the dated records used elsewhere in the book, such as the GPS and groundwater series."
+  },
+  {
     "objectID": "datasets.html#chapter-5-modeling-and-prediction",
     "href": "datasets.html#chapter-5-modeling-and-prediction",
     "title": "Datasets",
     "section": "Chapter 5 — Modeling and prediction",
     "text": "Chapter 5 — Modeling and prediction\n\nNottingham temperatures (nottem)\nTwenty years of monthly average air temperature at Nottingham Castle, England (1920–1939). A long, steady heartbeat of the seasons, used to practice spotting yearly cycles.\nDownload nottem.csv\n\nSource: Built into R (the datasets package). Terms: free to use and share (ships with R).\n\nColumns: year, month (Jan–Dec), temp_F (that month’s average temperature, in °F).\n\n\nNew York air quality (airquality)\nDaily air-quality and weather readings in New York, May–September 1973. The book uses it to predict ozone from temperature and other factors.\nDownload airquality.csv\n\nSource: Built into R (the datasets package). Terms: free to use and share.\n\nColumns\n\n\n\n\n\n\n\n\nColumn\nMeaning\nUnits\n\n\n\n\nOzone\nOzone in the air. Parts per billion is like counting how many red marbles are in a bag of a billion marbles\nparts per billion\n\n\nSolar.R\nStrength of sunshine reaching the ground\nLangleys\n\n\nWind\nWind speed\nmiles per hour\n\n\nTemp\nAir temperature\n°F\n\n\nMonth, Day\nWhen (month 5–9, day 1–31)\nnumber"
-  },
-  {
-    "objectID": "datasets.html#chapter-1-getting-started",
-    "href": "datasets.html#chapter-1-getting-started",
-    "title": "Datasets",
-    "section": "Chapter 1 — Getting started",
-    "text": "Chapter 1 — Getting started\n\nVolcano elevation grid (volcano)\nA height map of Maungawhau (Mt Eden), a volcano in Auckland, New Zealand, used in the very first plotting examples. The whole hill is laid out as a grid; each cell holds the ground height of a 10 m × 10 m patch — a height map, like a topographic model of the hill.\nDownload volcano.csv\n\nSource: Built into R (the datasets package). Terms: free to use and share.\nLayout: 87 rows × 61 columns of numbers; each number is the elevation in meters at that spot. There are no labels — position in the grid is the location."
   },
   {
     "objectID": "datasets.html#chapter-6-case-studies",
@@ -95,7 +102,7 @@
     "href": "about.html#our-approach",
     "title": "About & Resources",
     "section": "Our approach",
-    "text": "Our approach\nBetween us we have spent many years teaching R to students in Earth science, sustainability, and business, including many who arrived with no coding experience at all, from high schoolers to graduate researchers. That experience taught us how to introduce R to true beginners: keep it hands-on, show real results early, and build confidence before theory. This book is the result. It is written to break the ice of coding for people who never thought they could code. The style may not be what experienced R users expect, but for beginners it is very effective.\nA guiding belief runs through all of it: students do not struggle with complexity, they struggle with abstraction. With the right approach, anyone can learn to think analytically, work with real data, and contribute to research, regardless of where they start."
+    "text": "Our approach\nBetween us we have spent many years teaching R to students in Earth science, sustainability, and business, including many who arrived with no coding experience at all, from high schoolers to graduate researchers. That experience taught us how to introduce R to true beginners: keep it hands-on, show real results early, and build confidence before theory. This book is the result. It is written to break the ice of coding for people who never thought they could code. The style may not be what experienced R users expect, but for beginners it is very effective.\nA guiding belief runs through all of it: students do not struggle with complexity, they struggle with abstraction. The real skill is learning to describe a problem clearly and solve it with a simple approach, instead of reaching for a complicated model. With the right approach, anyone can learn to think analytically, work with real data, and contribute to research, regardless of where they start."
   },
   {
     "objectID": "about.html#imprint",
@@ -116,7 +123,7 @@
     "href": "about.html#contact",
     "title": "About & Resources",
     "section": "Contact",
-    "text": "Contact\nQuestions or feedback? Email marsellos@gmail.com."
+    "text": "Contact\nQuestions or feedback? Email amarsellos@gmail.com."
   },
   {
     "objectID": "book.html",
@@ -186,7 +193,7 @@
     "href": "index.html#built-for-people-who-have-never-coded",
     "title": "R for Earth and Sustainability Data Analytics",
     "section": "Built for people who have never coded",
-    "text": "Built for people who have never coded\nWe have spent many years teaching R to students in Earth science, sustainability, and business who had never written a line of code, from high schoolers to graduate researchers. That experience shaped every page. We learned a simple lesson: beginners do not struggle with complexity, they struggle with abstraction. So this book keeps everything hands-on and shows real results from the very first session.\nThis approach is deliberate, and it may not look like a traditional R course. To an experienced programmer it can feel unusual. To a true beginner, it is what finally makes coding click. Seeing a real map or a real trend appear on screen early changes everything: it turns “I could never code” into “let me try the next one.”\n\nLearn R · Explore Earth"
+    "text": "Built for people who have never coded\nWe have spent many years teaching R to students in Earth science, sustainability, and business who had never written a line of code, from high schoolers to graduate researchers. That experience shaped every page. We learned a simple lesson: beginners do not struggle with complexity, they struggle with abstraction. The hardest part is usually not the code; it is learning to describe a problem clearly and to solve it with a simple approach, instead of reaching for a complicated model. So this book keeps everything hands-on, shows real results from the very first session, and favors simple methods you fully understand over complex ones you do not.\nThis approach is deliberate, and it may not look like a traditional R course. To an experienced programmer it can feel unusual. To a true beginner, it is what finally makes coding click. Seeing a real map or a real trend appear on screen early changes everything: it turns “I could never code” into “let me try the next one.”\n\nLearn R · Explore Earth"
   },
   {
     "objectID": "updates.html",

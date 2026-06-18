@@ -149,10 +149,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#chapter-2-preparing-trustworthy-data" id="toc-chapter-2-preparing-trustworthy-data" class="nav-link active" data-scroll-target="#chapter-2-preparing-trustworthy-data">Chapter 2 — Preparing trustworthy data</a></li>
+  <li><a href="#chapter-1-getting-started" id="toc-chapter-1-getting-started" class="nav-link active" data-scroll-target="#chapter-1-getting-started">Chapter 1 — Getting started</a></li>
+  <li><a href="#chapter-2-preparing-trustworthy-data" id="toc-chapter-2-preparing-trustworthy-data" class="nav-link" data-scroll-target="#chapter-2-preparing-trustworthy-data">Chapter 2 — Preparing trustworthy data</a></li>
   <li><a href="#chapter-3-spatial-structure" id="toc-chapter-3-spatial-structure" class="nav-link" data-scroll-target="#chapter-3-spatial-structure">Chapter 3 — Spatial structure</a></li>
+  <li><a href="#chapter-4-time-series" id="toc-chapter-4-time-series" class="nav-link" data-scroll-target="#chapter-4-time-series">Chapter 4 — Time series</a></li>
   <li><a href="#chapter-5-modeling-and-prediction" id="toc-chapter-5-modeling-and-prediction" class="nav-link" data-scroll-target="#chapter-5-modeling-and-prediction">Chapter 5 — Modeling and prediction</a></li>
-  <li><a href="#chapter-1-getting-started" id="toc-chapter-1-getting-started" class="nav-link" data-scroll-target="#chapter-1-getting-started">Chapter 1 — Getting started</a></li>
   <li><a href="#chapter-6-case-studies" id="toc-chapter-6-case-studies" class="nav-link" data-scroll-target="#chapter-6-case-studies">Chapter 6 — Case studies</a></li>
   <li><a href="#chapter-7-global-change-and-sustainability" id="toc-chapter-7-global-change-and-sustainability" class="nav-link" data-scroll-target="#chapter-7-global-change-and-sustainability">Chapter 7 — Global change and sustainability</a></li>
   </ul>
@@ -222,6 +223,19 @@ Opening the files
 </div>
 <p>After each dataset there is a short table explaining every column: what it means, its <strong>units</strong>, and what was measured.</p>
 <hr>
+<section id="chapter-1-getting-started" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-1-getting-started">Chapter 1 — Getting started</h2>
+<section id="volcano-elevation-grid-volcano" class="level3">
+<h3 class="anchored" data-anchor-id="volcano-elevation-grid-volcano">Volcano elevation grid (<code>volcano</code>)</h3>
+<p>A height map of Maungawhau (Mt Eden), a volcano in Auckland, New Zealand, used in the very first plotting examples. The whole hill is laid out as a grid; each cell holds the ground height of a 10 m × 10 m patch — a height map, like a topographic model of the hill.</p>
+<p><a href="datasets/chapter1-intro/volcano.csv" target="_blank">Download <code>volcano.csv</code></a></p>
+<ul>
+<li><strong>Source:</strong> Built into R (the <code>datasets</code> package). <strong>Terms:</strong> free to use and share.</li>
+<li><strong>Layout:</strong> 87 rows × 61 columns of numbers; each number is the <strong>elevation in meters</strong> at that spot. There are no labels — position in the grid <em>is</em> the location.</li>
+</ul>
+<hr>
+</section>
+</section>
 <section id="chapter-2-preparing-trustworthy-data" class="level2">
 <h2 class="anchored" data-anchor-id="chapter-2-preparing-trustworthy-data">Chapter 2 — Preparing trustworthy data</h2>
 <section id="groundwater-levels-usgs" class="level3">
@@ -377,6 +391,11 @@ Opening the files
 <hr>
 </section>
 </section>
+<section id="chapter-4-time-series" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-4-time-series">Chapter 4 — Time series</h2>
+<p>Chapter 4 introduces time-series methods (trends, seasonal cycles, and how values relate to their own past) using a small <strong>made-up (simulated)</strong> temperature and humidity series created right in the chapter, so there is no separate file to download. The same methods apply directly to the dated records used elsewhere in the book, such as the GPS and groundwater series.</p>
+<hr>
+</section>
 <section id="chapter-5-modeling-and-prediction" class="level2">
 <h2 class="anchored" data-anchor-id="chapter-5-modeling-and-prediction">Chapter 5 — Modeling and prediction</h2>
 <section id="nottingham-temperatures-nottem" class="level3">
@@ -437,19 +456,6 @@ Opening the files
 </tr>
 </tbody>
 </table>
-<hr>
-</section>
-</section>
-<section id="chapter-1-getting-started" class="level2">
-<h2 class="anchored" data-anchor-id="chapter-1-getting-started">Chapter 1 — Getting started</h2>
-<section id="volcano-elevation-grid-volcano" class="level3">
-<h3 class="anchored" data-anchor-id="volcano-elevation-grid-volcano">Volcano elevation grid (<code>volcano</code>)</h3>
-<p>A height map of Maungawhau (Mt Eden), a volcano in Auckland, New Zealand, used in the very first plotting examples. The whole hill is laid out as a grid; each cell holds the ground height of a 10 m × 10 m patch — a height map, like a topographic model of the hill.</p>
-<p><a href="datasets/chapter1-intro/volcano.csv" target="_blank">Download <code>volcano.csv</code></a></p>
-<ul>
-<li><strong>Source:</strong> Built into R (the <code>datasets</code> package). <strong>Terms:</strong> free to use and share.</li>
-<li><strong>Layout:</strong> 87 rows × 61 columns of numbers; each number is the <strong>elevation in meters</strong> at that spot. There are no labels — position in the grid <em>is</em> the location.</li>
-</ul>
 <hr>
 </section>
 </section>
