@@ -1,0 +1,149 @@
+[
+  {
+    "objectID": "updates.html",
+    "href": "updates.html",
+    "title": "Updates & Errata",
+    "section": "",
+    "text": "Sign up to hear about new editions, corrections, and added resources for the book. We will only email you when there is something worth sharing.\n\n\n  \n    Email address\n    \n  \n  Subscribe"
+  },
+  {
+    "objectID": "updates.html#subscribe-to-updates",
+    "href": "updates.html#subscribe-to-updates",
+    "title": "Updates & Errata",
+    "section": "",
+    "text": "Sign up to hear about new editions, corrections, and added resources for the book. We will only email you when there is something worth sharing.\n\n\n  \n    Email address\n    \n  \n  Subscribe"
+  },
+  {
+    "objectID": "updates.html#errata-and-changelog",
+    "href": "updates.html#errata-and-changelog",
+    "title": "Updates & Errata",
+    "section": "Errata and changelog",
+    "text": "Errata and changelog\nThis is where we list corrections and changes to the book over time.\n\nv1.0 (2026): first edition."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "R for Earth and Sustainability Data Analytics",
+    "section": "",
+    "text": "From GPS motion and Greenland’s vanishing ice to coastal flooding and global greenhouse-gas emissions, this book teaches you to analyze the data of a changing planet, using R, starting from zero.\nLearn to analyze real Earth and environmental data from scratch in R: no prior coding or statistics experience required."
+  },
+  {
+    "objectID": "index.html#who-this-is-for",
+    "href": "index.html#who-this-is-for",
+    "title": "R for Earth and Sustainability Data Analytics",
+    "section": "Who this is for",
+    "text": "Who this is for\nThis book is written for students and researchers in environmental science, geology, sustainability, and GIS who are new to R. You do not need any prior programming or statistics background. Each chapter starts with the basics and builds up to working with real Earth data."
+  },
+  {
+    "objectID": "index.html#what-makes-this-book-different",
+    "href": "index.html#what-makes-this-book-different",
+    "title": "R for Earth and Sustainability Data Analytics",
+    "section": "What makes this book different",
+    "text": "What makes this book different\n\nStart from zero. No prior coding or statistics needed. You begin by installing R and writing your first command.\nReal Earth data, not toy numbers. Every method is taught on actual datasets: GPS ground motion, Greenland ice loss, coastal flooding, and global emissions.\nThe whole modern toolkit. Data cleaning, GIS and mapping, time series, statistical modeling, and an introduction to machine learning, all in one beginner-friendly path.\nReproducible and reusable. Download the code and data, run it yourself, and adapt it to your own research.\n\n\nLearn R · Explore Earth"
+  },
+  {
+    "objectID": "book.html",
+    "href": "book.html",
+    "title": "The Book",
+    "section": "",
+    "text": "From GPS motion and Greenland’s vanishing ice to coastal flooding and global greenhouse-gas emissions, this book teaches you to analyze the data of a changing planet, using R, starting from zero."
+  },
+  {
+    "objectID": "book.html#about-the-book",
+    "href": "book.html#about-the-book",
+    "title": "The Book",
+    "section": "About the book",
+    "text": "About the book\nR for Earth and Sustainability Data Analytics teaches you to turn real environmental data into insight, using R, even if you have never written a line of code. Most R, GIS, and data-science books assume you already program. This one does not. It starts with installing R and builds, step by step, to complete Earth-data case studies: tracking ground motion from GPS stations, measuring Greenland’s ice loss, mapping coastal flood risk, and charting global greenhouse-gas emissions.\nAlong the way you learn the full modern toolkit: data cleaning, spatial analysis and mapping (GIS), time series, statistical modeling, and an introduction to machine learning, all applied to the data of a changing planet. Every method is taught hands-on with datasets you can download and run yourself, so you finish able to do your own analysis, not just read about it."
+  },
+  {
+    "objectID": "book.html#what-you-will-learn",
+    "href": "book.html#what-you-will-learn",
+    "title": "The Book",
+    "section": "What you will learn",
+    "text": "What you will learn\nThe book is organized into seven chapters that build on each other, from the very first line of R code to full Earth-data case studies.\n\nIntroduction to R. Install R, run your first commands, and learn how the language works.\nData Handling and Preparation. Read, clean, and reshape data so it is ready to analyze.\nSpatial Analysis (GIS). Work with maps, coordinates, and spatial layers in R.\nTime Series Fundamentals. Explore data that changes over time and find patterns in it.\nModeling, Prediction, and Machine Learning. Build models that explain and forecast Earth data.\nEarth System Case Studies. Apply your skills to real measurements of the planet.\nGlobal Change and Sustainability. Analyze global change data and connect it to sustainability questions."
+  },
+  {
+    "objectID": "book.html#real-data-you-will-work-with",
+    "href": "book.html#real-data-you-will-work-with",
+    "title": "The Book",
+    "section": "Real data you will work with",
+    "text": "Real data you will work with\nYou will not practice on toy numbers. Every technique is taught with real Earth and environmental datasets:\n\nGPS station ground displacement\nGRACE / Greenland ice-mass change\nCoastal flooding and DEM (Long Island, NY)\nGlobal greenhouse-gas emissions (World Bank WDI)\nGroundwater levels\nClimate and temperature series"
+  },
+  {
+    "objectID": "book.html#why-this-book-is-different",
+    "href": "book.html#why-this-book-is-different",
+    "title": "The Book",
+    "section": "Why this book is different",
+    "text": "Why this book is different\nMost spatial and data-science books in R assume you already know how to program and how to do statistics, which leaves beginners in the Earth and environmental sciences to bridge that gap on their own. This book closes it. It is a true on-ramp that takes you from your first command to research-ready analysis, using the real data of a changing planet."
+  },
+  {
+    "objectID": "book.html#authors",
+    "href": "book.html#authors",
+    "title": "The Book",
+    "section": "Authors",
+    "text": "Authors\nAntonios E. Marsellos, Ph.D. (Department of Geology, Environment, and Sustainability, Hofstra University).\nKaterina G. Tsakiri, Ph.D. (Department of Information Systems, Analytics and Supply Chain Management, Rider University)."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About & Resources",
+    "section": "",
+    "text": "Antonios E. Marsellos, Ph.D. teaches and researches in the Department of Geology, Environment, and Sustainability, Hofstra University.\nKaterina G. Tsakiri, Ph.D. teaches and researches in the Department of Information Systems, Analytics and Supply Chain Management, Rider University."
+  },
+  {
+    "objectID": "about.html#authors",
+    "href": "about.html#authors",
+    "title": "About & Resources",
+    "section": "",
+    "text": "Antonios E. Marsellos, Ph.D. teaches and researches in the Department of Geology, Environment, and Sustainability, Hofstra University.\nKaterina G. Tsakiri, Ph.D. teaches and researches in the Department of Information Systems, Analytics and Supply Chain Management, Rider University."
+  },
+  {
+    "objectID": "about.html#imprint",
+    "href": "about.html#imprint",
+    "title": "About & Resources",
+    "section": "Imprint",
+    "text": "Imprint\nPublished by Earth Data Analytics Press (2026)."
+  },
+  {
+    "objectID": "about.html#resources",
+    "href": "about.html#resources",
+    "title": "About & Resources",
+    "section": "Resources",
+    "text": "Resources\n\n\n\nResForMe logo\n\n\nThe authors also run ResForMe, a research-mentoring program for students."
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About & Resources",
+    "section": "Contact",
+    "text": "Contact\nQuestions or feedback? Email marsellos@gmail.com."
+  },
+  {
+    "objectID": "code.html",
+    "href": "code.html",
+    "title": "Code & Data",
+    "section": "",
+    "text": "Every example in the book is built with real, runnable R code. The complete, chapter-by-chapter code and the datasets that go with it are available to readers of the book."
+  },
+  {
+    "objectID": "code.html#a-taste-of-the-code",
+    "href": "code.html#a-taste-of-the-code",
+    "title": "Code & Data",
+    "section": "A taste of the code",
+    "text": "A taste of the code\nHere is a short example of the kind of code you will write. It reads a CSV file of measurements and makes a simple plot.\n\n# Read a CSV of climate measurements\nclimate &lt;- read.csv(\"climate.csv\")\n\n# Look at the first few rows\nhead(climate)\n\n# Plot temperature over time\nplot(climate$year, climate$temperature,\n     type = \"l\",\n     xlab = \"Year\",\n     ylab = \"Temperature\",\n     main = \"Temperature over time\")\n\nIn the book, examples like this grow step by step into full Earth-data analyses, with each line explained for beginners."
+  },
+  {
+    "objectID": "code.html#get-the-full-code",
+    "href": "code.html#get-the-full-code",
+    "title": "Code & Data",
+    "section": "Get the full code",
+    "text": "Get the full code\nThe complete, chapter-by-chapter code and datasets are available to readers of the book by request. Here is how it works:\n\nFill in a short form with your name, email, and GitHub username.  Request code access\nWe verify the request and grant you access to a private GitHub repository with all of the code and data.\nYou clone or download the repository whenever you need it.\n\nA free GitHub account is needed to receive access to the private repository. Readers without a GitHub account can email marsellos@gmail.com and we will send the code as a zip file instead."
+  },
+  {
+    "objectID": "sample.html",
+    "href": "sample.html",
+    "title": "Free Sample",
+    "section": "",
+    "text": "Want to try the book before you buy it? The free sample includes the full front matter plus Chapter 1, “Introduction to R” (about 60 pages). It is the same content and layout as the printed book, so you can see exactly how it teaches R from the very beginning.\nChapter 1 walks you through installing R, running your first commands, and understanding how the language works, with no prior experience assumed.\n\nDownload the free sample (PDF)"
+  }
+]
