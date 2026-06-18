@@ -174,41 +174,14 @@ ul.task-list li input[type="checkbox"] {
 <section id="subscribe-to-updates" class="level2">
 <h2 class="anchored" data-anchor-id="subscribe-to-updates">Subscribe to updates</h2>
 <p>Sign up to hear about new editions, corrections, and added resources for the book. We will only email you when there is something worth sharing.</p>
-<!-- This form posts to a Google Form so responses land in your Google Sheet.
-     To activate it, replace PASTE_FORM_ID_HERE and entry.PASTE_ENTRY_ID_HERE below.
-     Steps: create a Google Form with ONE "Email" short-answer question. The form ID is
-     the long code in its URL (.../forms/d/e/<FORM_ID>/viewform). To get the email field's
-     entry ID, open the form menu, choose "Get pre-filled link", type a test email, click
-     "Get link", and copy the entry.NNNNNNN value from the link. -->
-<form id="subscribe-form" action="https://docs.google.com/forms/d/e/PASTE_FORM_ID_HERE/formResponse" method="post" target="hidden_subscribe_iframe" style="max-width: 460px;">
+<form id="subscribe-form" style="max-width: 460px;" onsubmit="event.preventDefault(); var e = encodeURIComponent(document.getElementById('subscribe-email').value); window.location.href = 'mailto:marsellos@gmail.com?subject=Subscribe%20to%20R-GEO%20updates&amp;body=Please%20add%20this%20email%20to%20the%20R-GEO%20updates%20list%3A%20' + e; document.getElementById('subscribe-msg').style.display = 'block';">
   <div class="mb-3">
     <label for="subscribe-email" class="form-label fw-semibold">Email address</label>
-    <input type="email" id="subscribe-email" name="entry.PASTE_ENTRY_ID_HERE" class="form-control form-control-lg" placeholder="you@example.com" required="">
+    <input type="email" id="subscribe-email" class="form-control form-control-lg" placeholder="you@example.com" required="">
   </div>
   <button type="submit" class="btn btn-primary btn-lg">Subscribe</button>
 </form>
-<iframe name="hidden_subscribe_iframe" style="display:none;" title="subscribe target"></iframe>
-<p id="subscribe-msg" style="display:none; margin-top: 0.75rem; font-weight: 600;"></p>
-
-<script>
-document.getElementById('subscribe-form').addEventListener('submit', function (e) {
-  var msg = document.getElementById('subscribe-msg');
-  if (this.action.indexOf('PASTE_FORM_ID_HERE') !== -1) {
-    e.preventDefault();
-    msg.style.display = 'block';
-    msg.style.color = '#9a6700';
-    msg.textContent = 'The subscription list is being connected and will be live shortly.';
-    return;
-  }
-  var form = this;
-  setTimeout(function () {
-    msg.style.display = 'block';
-    msg.style.color = '#1a7f37';
-    msg.textContent = 'Thank you. You are on the list.';
-    form.reset();
-  }, 400);
-});
-</script>
+<p id="subscribe-msg" style="display:none; margin-top: 0.75rem; color:#1a7f37; font-weight:600;">Your email app will open with a ready message. Just send it and you are on the list.</p>
 </section>
 <section id="errata-and-changelog" class="level2">
 <h2 class="anchored" data-anchor-id="errata-and-changelog">Errata and changelog</h2>
