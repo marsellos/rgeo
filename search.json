@@ -39,7 +39,7 @@
     "href": "index.html#what-makes-this-book-different",
     "title": "R for Earth and Sustainability Data Analytics",
     "section": "What makes this book different",
-    "text": "What makes this book different\n\nStart from zero. No prior coding or statistics needed. You begin by installing R and writing your first command.\nReal Earth data, not toy numbers. Every method is taught on actual datasets: GPS ground motion, Greenland ice loss, coastal flooding, and global emissions.\nThe whole modern toolkit. Data cleaning, GIS and mapping, time series, statistical modeling, and an introduction to machine learning, all in one beginner-friendly path.\nReproducible and reusable. Download the code and data, run it yourself, and adapt it to your own research.\n\n\nLearn R · Explore Earth"
+    "text": "What makes this book different\n\nStart from zero. No prior coding or statistics needed. You begin by installing R and writing your first command.\nReal Earth data from day one. Every method is taught on actual datasets: GPS ground motion, Greenland ice loss, coastal flooding, and global emissions.\nThe whole modern toolkit. Data cleaning, GIS and mapping, time series, statistical modeling, and an introduction to machine learning, all in one beginner-friendly path.\nReproducible and reusable. Download the code and data, run it yourself, and adapt it to your own research.\n\n\nLearn R · Explore Earth"
   },
   {
     "objectID": "book.html",
@@ -67,7 +67,7 @@
     "href": "book.html#real-data-you-will-work-with",
     "title": "The Book",
     "section": "Real data you will work with",
-    "text": "Real data you will work with\nYou will not practice on toy numbers. Every technique is taught with real Earth and environmental datasets:\n\nGPS station ground displacement\nGRACE / Greenland ice-mass change\nCoastal flooding and DEM (Long Island, NY)\nGlobal greenhouse-gas emissions (World Bank WDI)\nGroundwater levels\nClimate and temperature series"
+    "text": "Real data you will work with\nYou work with real data from day one. Every technique is taught with actual Earth and environmental datasets:\n\nGPS station ground displacement\nGRACE / Greenland ice-mass change\nCoastal flooding and DEM (Long Island, NY)\nGlobal greenhouse-gas emissions (World Bank WDI)\nGroundwater levels\nClimate and temperature series"
   },
   {
     "objectID": "book.html#why-this-book-is-different",
