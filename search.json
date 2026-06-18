@@ -1,45 +1,115 @@
 [
   {
-    "objectID": "updates.html",
-    "href": "updates.html",
-    "title": "Updates & Errata",
+    "objectID": "code.html",
+    "href": "code.html",
+    "title": "Code & Data",
     "section": "",
-    "text": "Sign up to hear about new editions, corrections, and added resources for the book. We will only email you when there is something worth sharing.\n\n  \n    Email address\n    \n  \n  Subscribe\n\nYour email app will open with a ready message. Just send it and you are on the list."
+    "text": "Every example in the book is built with real, runnable R code. The complete, chapter-by-chapter code and the datasets that go with it are available to readers of the book."
   },
   {
-    "objectID": "updates.html#subscribe-to-updates",
-    "href": "updates.html#subscribe-to-updates",
-    "title": "Updates & Errata",
+    "objectID": "code.html#a-taste-of-the-code",
+    "href": "code.html#a-taste-of-the-code",
+    "title": "Code & Data",
+    "section": "A taste of the code",
+    "text": "A taste of the code\nHere is a short example of the kind of code you will write. It reads a CSV file of measurements and makes a simple plot.\n\n# Read a CSV of climate measurements\nclimate &lt;- read.csv(\"climate.csv\")\n\n# Look at the first few rows\nhead(climate)\n\n# Plot temperature over time\nplot(climate$year, climate$temperature,\n     type = \"l\",\n     xlab = \"Year\",\n     ylab = \"Temperature\",\n     main = \"Temperature over time\")\n\nIn the book, examples like this grow step by step into full Earth-data analyses, with each line explained for beginners."
+  },
+  {
+    "objectID": "code.html#get-the-full-code",
+    "href": "code.html#get-the-full-code",
+    "title": "Code & Data",
+    "section": "Get the full code",
+    "text": "Get the full code\nThe complete, chapter-by-chapter code and datasets are available to readers of the book by request. Here is how it works:\n\nRequest access by email with your name, GitHub username, and proof of purchase (an order or receipt number). Request code access\nWe verify the request and grant you access to a private GitHub repository with all of the code and data.\nYou clone or download the repository whenever you need it.\n\nA free GitHub account is needed to receive access to the private repository. Readers without a GitHub account can email marsellos@gmail.com and we will send the code as a zip file instead."
+  },
+  {
+    "objectID": "sample.html",
+    "href": "sample.html",
+    "title": "Free Sample",
     "section": "",
-    "text": "Sign up to hear about new editions, corrections, and added resources for the book. We will only email you when there is something worth sharing.\n\n  \n    Email address\n    \n  \n  Subscribe\n\nYour email app will open with a ready message. Just send it and you are on the list."
+    "text": "Want to try the book before you buy it? The free sample includes the full front matter plus Chapter 1, “Introduction to R” (about 60 pages). It is the same content and layout as the printed book, so you can see exactly how it teaches R from the very beginning.\nChapter 1 walks you through installing R, running your first commands, and understanding how the language works, with no prior experience assumed.\n\nDownload the free sample (PDF)"
   },
   {
-    "objectID": "updates.html#errata-and-changelog",
-    "href": "updates.html#errata-and-changelog",
-    "title": "Updates & Errata",
-    "section": "Errata and changelog",
-    "text": "Errata and changelog\nThis is where we list corrections and changes to the book over time.\n\nv1.0 (2026): first edition."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "R for Earth and Sustainability Data Analytics",
+    "objectID": "datasets.html",
+    "href": "datasets.html",
+    "title": "Datasets",
     "section": "",
-    "text": "From GPS motion and Greenland’s vanishing ice to coastal flooding and global greenhouse-gas emissions, this book teaches you to analyze the data of a changing planet, using R, starting from zero.\nLearn to analyze real Earth and environmental data from scratch in R: no prior coding or statistics experience required."
+    "text": "Every analysis in this book uses real, public Earth and environmental data. This page keeps a copy of each dataset, organized by chapter, so you always have a way to get it.\nA column guide (a “data dictionary”) follows each dataset: what every column means, the units, and what was actually measured, in everyday language."
   },
   {
-    "objectID": "index.html#who-this-is-for",
-    "href": "index.html#who-this-is-for",
-    "title": "R for Earth and Sustainability Data Analytics",
-    "section": "Who this is for",
-    "text": "Who this is for\nThis book is written for students and researchers in environmental science, geology, sustainability, and GIS who are new to R. You do not need any prior programming or statistics background. Each chapter starts with the basics and builds up to working with real Earth data."
+    "objectID": "datasets.html#chapter-2-preparing-trustworthy-data",
+    "href": "datasets.html#chapter-2-preparing-trustworthy-data",
+    "title": "Datasets",
+    "section": "Chapter 2 — Preparing trustworthy data",
+    "text": "Chapter 2 — Preparing trustworthy data\n\nGroundwater levels (USGS)\nHow high the water sits underground at one monitoring well on Long Island, recorded almost every day for 25 years. Picture a drinking straw pushed deep into the ground: this is the water height inside that straw, tracked over time.\nDownload usgs_groundwater_…rdb\n\nSource: U.S. Geological Survey, National Water Information System (NWIS). Well 404416073491801, 2000–2025.\nTerms: Public domain (U.S. Government work). Free to use and share.\nPlease credit: “U.S. Geological Survey, National Water Information System.”\n\nColumns\n\n\n\n\n\n\n\n\nColumn\nMeaning\nUnits\n\n\n\n\nagency_cd\nWho recorded it (always “USGS”)\ntext\n\n\nsite_no\nThe well’s ID number\ntext\n\n\ndatetime\nThe day of the reading\ndate\n\n\n…_62610_00003\nWater level: height of the underground water surface, measured against a fixed nationwide sea-level benchmark (like a “zero” line painted on every well in the country)\nfeet above the NGVD 1929 datum\n\n\n…_62610_00003_cd\nA quality stamp: A = approved, P = provisional (not yet double-checked)\ncode\n\n\n\n\n\nDaily precipitation, JFK Airport (NOAA GHCN-Daily)\nHow much rain and snow fell each day at New York’s JFK Airport weather station. The book pairs this with the groundwater data to see whether wet periods line up with the water rising.\nDownload ghcn-daily_USW00094789_JFK.csv\n\nSource: NOAA National Centers for Environmental Information, Global Historical Climatology Network – Daily. Station USW00094789 (JFK International Airport).\nTerms: Public domain (NOAA / U.S. Government, U.S. station). Free to use and share.\nPlease credit: “NOAA National Centers for Environmental Information, GHCN-Daily.”\n\nKey columns (the file also carries many extra weather variables)\n\n\n\n\n\n\n\n\nColumn\nMeaning\nUnits\n\n\n\n\nSTATION, NAME\nThe station’s ID and name\ntext\n\n\nDATE\nThe day\ndate\n\n\nLATITUDE, LONGITUDE, ELEVATION\nWhere the station sits\ndegrees, meters\n\n\nPRCP\nRain/melted-snow that day. Stored in tenths of a millimeter, so 15 means 1.5 mm — like measuring rainfall with an extra-fine ruler\ntenths of mm\n\n\nTMAX, TMIN\nWarmest and coldest temperature that day, also in tenths (so 233 = 23.3 °C)\ntenths of °C\n\n\nSNOW, SNWD\nNew snowfall and snow depth on the ground\nmm\n\n\n*_ATTRIBUTES\nQuality and source flags for the value next to them\ncodes"
   },
   {
-    "objectID": "index.html#what-makes-this-book-different",
-    "href": "index.html#what-makes-this-book-different",
-    "title": "R for Earth and Sustainability Data Analytics",
-    "section": "What makes this book different",
-    "text": "What makes this book different\n\nStart from zero. No prior coding or statistics needed. You begin by installing R and writing your first command.\nReal Earth data from day one. Every method is taught on actual datasets: GPS ground motion, Greenland ice loss, coastal flooding, and global emissions.\nThe whole modern toolkit. Data cleaning, GIS and mapping, time series, statistical modeling, and an introduction to machine learning, all in one beginner-friendly path.\nReproducible and reusable. Download the code and data, run it yourself, and adapt it to your own research.\n\n\nLearn R · Explore Earth"
+    "objectID": "datasets.html#chapter-3-spatial-structure",
+    "href": "datasets.html#chapter-3-spatial-structure",
+    "title": "Datasets",
+    "section": "Chapter 3 — Spatial structure",
+    "text": "Chapter 3 — Spatial structure\n\nVolcano database (Smithsonian, via plotly) — link only\nA worldwide list of volcanoes with their locations, heights, and types. The book uses it to plot volcanoes on a map.\nWe link to this one rather than re-host it: the data comes from the Smithsonian Global Volcanism Program, whose terms allow educational use with credit but not commercial redistribution, so the safest path is to fetch it from the original location.\n\nGet it from: plotly/datasets/volcano_db.csv\nOriginal source / please credit: Smithsonian Institution, Global Volcanism Program — https://volcano.si.edu\nTerms: Smithsonian Terms of Use (educational/non-commercial, with citation).\n\nColumns: Volcano Name, Country, Region, Latitude/Longitude (where it is, in degrees), Elev (summit height in meters), Type (e.g. shield, stratovolcano), Status, Last Known (most recent known eruption).\n\n\nLong Island counties (NYS GIS)\nThe map outlines of the four Long Island counties — Kings, Queens, Nassau, and Suffolk — used as the base map for the elevation and flood examples. Like tracing the coastline of the island onto paper.\nDownload nys_long_island_counties.geojson\n\nSource: New York State GIS Program Office, NYS Civil Boundaries (counties layer).\nTerms: Public New York State government data. Provided as-is, for planning and general use only, with no warranty (no formal open-data license is published, so we mirror it with credit).\nPlease credit: “New York State GIS Program Office, NYS Civil Boundaries.”\n\nColumns: NAME (county name), ABBREV (short code), plus the geometry (the actual boundary shape).\n\n\nElevation & bathymetry (elevatr / AWS Terrain Tiles) — reproduce on demand\nThe height of the land (and depth of the nearby seabed) across the region, used to build the digital elevation models, hillshades, and flood maps. Imagine the land covered by a fine checkerboard where every square stores the ground height there — the same idea as the depth numbers printed on the floor of a swimming pool.\nThis one is assembled on demand from open map tiles rather than stored as a single file. To recreate it, the book calls elevatr::get_elev_raster() for the area and detail level shown in the chapter.\n\nSource: AWS Terrain Tiles (built from public elevation data such as SRTM and the USGS National Elevation Dataset), retrieved via the elevatr R package.\nTerms: Open data; credit the underlying providers.\nPlease credit: “Elevation from AWS Terrain Tiles via the elevatr R package.”\nValues: ground (or seabed) height in meters; below sea level is negative."
+  },
+  {
+    "objectID": "datasets.html#chapter-5-modeling-and-prediction",
+    "href": "datasets.html#chapter-5-modeling-and-prediction",
+    "title": "Datasets",
+    "section": "Chapter 5 — Modeling and prediction",
+    "text": "Chapter 5 — Modeling and prediction\n\nNottingham temperatures (nottem)\nTwenty years of monthly average air temperature at Nottingham Castle, England (1920–1939). A long, steady heartbeat of the seasons, used to practice spotting yearly cycles.\nDownload nottem.csv\n\nSource: Built into R (the datasets package). Terms: free to use and share (ships with R).\n\nColumns: year, month (Jan–Dec), temp_F (that month’s average temperature, in °F).\n\n\nNew York air quality (airquality)\nDaily air-quality and weather readings in New York, May–September 1973. The book uses it to predict ozone from temperature and other factors.\nDownload airquality.csv\n\nSource: Built into R (the datasets package). Terms: free to use and share.\n\nColumns\n\n\n\n\n\n\n\n\nColumn\nMeaning\nUnits\n\n\n\n\nOzone\nOzone in the air. Parts per billion is like counting how many red marbles are in a bag of a billion marbles\nparts per billion\n\n\nSolar.R\nStrength of sunshine reaching the ground\nLangleys\n\n\nWind\nWind speed\nmiles per hour\n\n\nTemp\nAir temperature\n°F\n\n\nMonth, Day\nWhen (month 5–9, day 1–31)\nnumber"
+  },
+  {
+    "objectID": "datasets.html#chapter-1-getting-started",
+    "href": "datasets.html#chapter-1-getting-started",
+    "title": "Datasets",
+    "section": "Chapter 1 — Getting started",
+    "text": "Chapter 1 — Getting started\n\nVolcano elevation grid (volcano)\nA height map of Maungawhau (Mt Eden), a volcano in Auckland, New Zealand, used in the very first plotting examples. The whole hill is laid out as a grid; each cell holds the ground height of a 10 m × 10 m patch — a height map, like a topographic model of the hill.\nDownload volcano.csv\n\nSource: Built into R (the datasets package). Terms: free to use and share.\nLayout: 87 rows × 61 columns of numbers; each number is the elevation in meters at that spot. There are no labels — position in the grid is the location."
+  },
+  {
+    "objectID": "datasets.html#chapter-6-case-studies",
+    "href": "datasets.html#chapter-6-case-studies",
+    "title": "Datasets",
+    "section": "Chapter 6 — Case studies",
+    "text": "Chapter 6 — Case studies\n\nGPS station NYCI (Nevada Geodetic Lab)\nDaily position of a GPS ground marker near New York City. Every day it records how far the marker has shifted east, north, and up since a fixed starting point — like marking how far a parked car has slowly rolled from its original spot, measured to the millimeter.\nDownload gps_NYCI.tenv3\n\nSource: Nevada Geodetic Laboratory, University of Nevada, Reno — station NYCI.\nTerms: Open data; please credit. Cite Blewitt, Hammond & Kreemer (2018), Eos, doi:10.1029/2018EO104623.\nPlease credit: “Nevada Geodetic Laboratory, University of Nevada, Reno.”\n\nKey columns\n\n\n\n\n\n\n\n\nColumn\nMeaning\nUnits\n\n\n\n\nsite\nStation name (NYCI)\ntext\n\n\nYYMMMDD, yyyy.yyyy\nThe date, written two ways (calendar, and as a decimal year like 2006.31)\ndate / years\n\n\n__MJD\nA running day-counter scientists use, so any date becomes one plain number (handy for math)\nday number\n\n\n__east(m), _north(m), ____up(m)\nHow far the marker has moved sideways (east, north) and vertically (up) from its reference position\nmeters\n\n\nsig_e(m), sig_n(m), sig_u(m)\nThe “give or take” — how uncertain each position is\nmeters\n\n\n_latitude(deg), _longitude(deg), __height(m)\nWhere the station is on Earth\ndegrees, meters\n\n\n\n\n\nGRACE water-mass change (NASA/JPL) — link to Zenodo\nMonthly maps of how much water (including ice) a region has gained or lost, measured by twin satellites that sense tiny changes in Earth’s gravity. The book uses it to watch ice loss over Greenland.\nThis file is large and is already archived by us, so we link to it:\n\nGet it from: Zenodo record, doi:10.5281/zenodo.20535360\nOriginal source / please credit: NASA/JPL GRACE & GRACE-FO mascons, PO.DAAC, doi:10.5067/TEMSC-3JC634.\nTerms: Public domain (NASA / U.S. Government).\nMain value: water-mass change expressed as liquid water equivalent thickness (centimeters). That means: if the gained or lost water were spread as an even layer over the area, this is how thick that layer would be — a way to turn “how much water” into a single, easy-to-picture height.\n\n\n\nLong Island counties (NYS GIS)\nSame county outlines as Chapter 3, reused as the base map for the flood case study. Download nys_long_island_counties.geojson — source, terms, and columns are identical to the Chapter 3 entry."
+  },
+  {
+    "objectID": "datasets.html#chapter-7-global-change-and-sustainability",
+    "href": "datasets.html#chapter-7-global-change-and-sustainability",
+    "title": "Datasets",
+    "section": "Chapter 7 — Global change and sustainability",
+    "text": "Chapter 7 — Global change and sustainability\n\nGreenhouse-gas emissions & population (World Bank, WDI)\nFor nearly every country, total greenhouse-gas emissions and total population, year by year since 1960. The book divides one by the other to get emissions per person, then maps how that has changed worldwide.\nDownload emissions EN.GHG.ALL.MT.CE.AR5 (zip) · Download population SP.POP.TOTL (zip)\n\nSource: World Bank, World Development Indicators (WDI).\nTerms: Creative Commons Attribution 4.0 (CC BY 4.0) — free to use and share with credit.\nPlease credit: “World Bank, World Development Indicators (CC BY 4.0).”\n\nColumns (each file is a wide table)\n\n\n\n\n\n\n\n\nColumn\nMeaning\nUnits\n\n\n\n\nCountry Name, Country Code\nThe country and its 3-letter code (e.g. USA, BRA, KEN)\ntext\n\n\nIndicator Name, Indicator Code\nWhat is being measured\ntext\n\n\n1960 … 2024\nOne column per year, holding that year’s value\nsee below\n\n\n\nThe emissions value is total greenhouse gases in megatonnes of CO₂-equivalent. Different gases trap heat by different amounts, so “CO₂-equivalent” rebalances them onto one common scale — like converting several currencies into dollars so you can add them into a single total. The population value is simply the number of people.\n\n\nCountry boundaries (Natural Earth)\nThe outline shapes of every country in the world, used as the canvas for the global emissions maps. A blank world map waiting to be colored in.\nDownload ne_50m_admin_0_countries.zip\n\nSource: Natural Earth (1:50m cultural vectors), via the rnaturalearth R package.\nTerms: Public domain — free to use and share, no restrictions.\nPlease credit (optional): “Made with Natural Earth.”\n\nKey columns: NAME (country name), ISO_A3 (3-letter country code, used to match the World Bank data), plus the geometry (each country’s outline). The file also carries extras like continent, region, and an estimated population.\n\n\n\n\n\n\n\nCredits and terms, in one place\n\n\n\nThe datasets above belong to their original providers and are shared here under the terms listed with each. Please keep the credit lines if you reuse them. The book and this site only mirror the public copies for convenience and reliability; they make no claim of ownership over the underlying data."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About & Resources",
+    "section": "",
+    "text": "Antonios E. Marsellos, Ph.D. teaches and researches in the Department of Geology, Environment, and Sustainability, Hofstra University.\nKaterina G. Tsakiri, Ph.D. teaches and researches in the Department of Information Systems, Analytics and Supply Chain Management, Rider University."
+  },
+  {
+    "objectID": "about.html#authors",
+    "href": "about.html#authors",
+    "title": "About & Resources",
+    "section": "",
+    "text": "Antonios E. Marsellos, Ph.D. teaches and researches in the Department of Geology, Environment, and Sustainability, Hofstra University.\nKaterina G. Tsakiri, Ph.D. teaches and researches in the Department of Information Systems, Analytics and Supply Chain Management, Rider University."
+  },
+  {
+    "objectID": "about.html#imprint",
+    "href": "about.html#imprint",
+    "title": "About & Resources",
+    "section": "Imprint",
+    "text": "Imprint\nPublished by Earth Data Analytics Press (2026)."
+  },
+  {
+    "objectID": "about.html#resources",
+    "href": "about.html#resources",
+    "title": "About & Resources",
+    "section": "Resources",
+    "text": "Resources\n\n\n\nResForMe logo\n\n\nThe authors also run ResForMe, a research-mentoring program for students."
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About & Resources",
+    "section": "Contact",
+    "text": "Contact\nQuestions or feedback? Email marsellos@gmail.com."
   },
   {
     "objectID": "book.html",
@@ -84,66 +154,45 @@
     "text": "Authors\nAntonios E. Marsellos, Ph.D. (Department of Geology, Environment, and Sustainability, Hofstra University).\nKaterina G. Tsakiri, Ph.D. (Department of Information Systems, Analytics and Supply Chain Management, Rider University)."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About & Resources",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "R for Earth and Sustainability Data Analytics",
     "section": "",
-    "text": "Antonios E. Marsellos, Ph.D. teaches and researches in the Department of Geology, Environment, and Sustainability, Hofstra University.\nKaterina G. Tsakiri, Ph.D. teaches and researches in the Department of Information Systems, Analytics and Supply Chain Management, Rider University."
+    "text": "From GPS motion and Greenland’s vanishing ice to coastal flooding and global greenhouse-gas emissions, this book teaches you to analyze the data of a changing planet, using R, starting from zero.\nLearn to analyze real Earth and environmental data from scratch in R: no prior coding or statistics experience required."
   },
   {
-    "objectID": "about.html#authors",
-    "href": "about.html#authors",
-    "title": "About & Resources",
+    "objectID": "index.html#who-this-is-for",
+    "href": "index.html#who-this-is-for",
+    "title": "R for Earth and Sustainability Data Analytics",
+    "section": "Who this is for",
+    "text": "Who this is for\nThis book is written for students and researchers in environmental science, geology, sustainability, and GIS who are new to R. You do not need any prior programming or statistics background. Each chapter starts with the basics and builds up to working with real Earth data."
+  },
+  {
+    "objectID": "index.html#what-makes-this-book-different",
+    "href": "index.html#what-makes-this-book-different",
+    "title": "R for Earth and Sustainability Data Analytics",
+    "section": "What makes this book different",
+    "text": "What makes this book different\n\nStart from zero. No prior coding or statistics needed. You begin by installing R and writing your first command.\nReal Earth data from day one. Every method is taught on actual datasets: GPS ground motion, Greenland ice loss, coastal flooding, and global emissions.\nThe whole modern toolkit. Data cleaning, GIS and mapping, time series, statistical modeling, and an introduction to machine learning, all in one beginner-friendly path.\nReproducible and reusable. Download the code and data, run it yourself, and adapt it to your own research.\n\n\nLearn R · Explore Earth"
+  },
+  {
+    "objectID": "updates.html",
+    "href": "updates.html",
+    "title": "Updates & Errata",
     "section": "",
-    "text": "Antonios E. Marsellos, Ph.D. teaches and researches in the Department of Geology, Environment, and Sustainability, Hofstra University.\nKaterina G. Tsakiri, Ph.D. teaches and researches in the Department of Information Systems, Analytics and Supply Chain Management, Rider University."
+    "text": "Sign up to hear about new editions, corrections, and added resources for the book. We will only email you when there is something worth sharing.\n\n  \n    Email address\n    \n  \n  Subscribe\n\nYour email app will open with a ready message. Just send it and you are on the list."
   },
   {
-    "objectID": "about.html#imprint",
-    "href": "about.html#imprint",
-    "title": "About & Resources",
-    "section": "Imprint",
-    "text": "Imprint\nPublished by Earth Data Analytics Press (2026)."
-  },
-  {
-    "objectID": "about.html#resources",
-    "href": "about.html#resources",
-    "title": "About & Resources",
-    "section": "Resources",
-    "text": "Resources\n\n\n\nResForMe logo\n\n\nThe authors also run ResForMe, a research-mentoring program for students."
-  },
-  {
-    "objectID": "about.html#contact",
-    "href": "about.html#contact",
-    "title": "About & Resources",
-    "section": "Contact",
-    "text": "Contact\nQuestions or feedback? Email marsellos@gmail.com."
-  },
-  {
-    "objectID": "code.html",
-    "href": "code.html",
-    "title": "Code & Data",
+    "objectID": "updates.html#subscribe-to-updates",
+    "href": "updates.html#subscribe-to-updates",
+    "title": "Updates & Errata",
     "section": "",
-    "text": "Every example in the book is built with real, runnable R code. The complete, chapter-by-chapter code and the datasets that go with it are available to readers of the book."
+    "text": "Sign up to hear about new editions, corrections, and added resources for the book. We will only email you when there is something worth sharing.\n\n  \n    Email address\n    \n  \n  Subscribe\n\nYour email app will open with a ready message. Just send it and you are on the list."
   },
   {
-    "objectID": "code.html#a-taste-of-the-code",
-    "href": "code.html#a-taste-of-the-code",
-    "title": "Code & Data",
-    "section": "A taste of the code",
-    "text": "A taste of the code\nHere is a short example of the kind of code you will write. It reads a CSV file of measurements and makes a simple plot.\n\n# Read a CSV of climate measurements\nclimate &lt;- read.csv(\"climate.csv\")\n\n# Look at the first few rows\nhead(climate)\n\n# Plot temperature over time\nplot(climate$year, climate$temperature,\n     type = \"l\",\n     xlab = \"Year\",\n     ylab = \"Temperature\",\n     main = \"Temperature over time\")\n\nIn the book, examples like this grow step by step into full Earth-data analyses, with each line explained for beginners."
-  },
-  {
-    "objectID": "code.html#get-the-full-code",
-    "href": "code.html#get-the-full-code",
-    "title": "Code & Data",
-    "section": "Get the full code",
-    "text": "Get the full code\nThe complete, chapter-by-chapter code and datasets are available to readers of the book by request. Here is how it works:\n\nRequest access by email with your name, GitHub username, and proof of purchase (an order or receipt number). Request code access\nWe verify the request and grant you access to a private GitHub repository with all of the code and data.\nYou clone or download the repository whenever you need it.\n\nA free GitHub account is needed to receive access to the private repository. Readers without a GitHub account can email marsellos@gmail.com and we will send the code as a zip file instead."
-  },
-  {
-    "objectID": "sample.html",
-    "href": "sample.html",
-    "title": "Free Sample",
-    "section": "",
-    "text": "Want to try the book before you buy it? The free sample includes the full front matter plus Chapter 1, “Introduction to R” (about 60 pages). It is the same content and layout as the printed book, so you can see exactly how it teaches R from the very beginning.\nChapter 1 walks you through installing R, running your first commands, and understanding how the language works, with no prior experience assumed.\n\nDownload the free sample (PDF)"
+    "objectID": "updates.html#errata-and-changelog",
+    "href": "updates.html#errata-and-changelog",
+    "title": "Updates & Errata",
+    "section": "Errata and changelog",
+    "text": "Errata and changelog\nThis is where we list corrections and changes to the book over time.\n\nv1.0 (2026): first edition."
   }
 ]
