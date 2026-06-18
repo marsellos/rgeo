@@ -91,6 +91,13 @@
     "text": "Antonios E. Marsellos, Ph.D. teaches and researches in the Department of Geology, Environment, and Sustainability, Hofstra University.\nKaterina G. Tsakiri, Ph.D. teaches and researches in the Department of Information Systems, Analytics and Supply Chain Management, Rider University."
   },
   {
+    "objectID": "about.html#our-approach",
+    "href": "about.html#our-approach",
+    "title": "About & Resources",
+    "section": "Our approach",
+    "text": "Our approach\nBetween us we have spent many years teaching R to students in Earth science, sustainability, and business, including many who arrived with no coding experience at all, from high schoolers to graduate researchers. That experience taught us how to introduce R to true beginners: keep it hands-on, show real results early, and build confidence before theory. This book is the result. It is written to break the ice of coding for people who never thought they could code. The style may not be what experienced R users expect, but for beginners it is very effective.\nA guiding belief runs through all of it: students do not struggle with complexity, they struggle with abstraction. With the right approach, anyone can learn to think analytically, work with real data, and contribute to research, regardless of where they start."
+  },
+  {
     "objectID": "about.html#imprint",
     "href": "about.html#imprint",
     "title": "About & Resources",
@@ -144,7 +151,7 @@
     "href": "book.html#why-this-book-is-different",
     "title": "The Book",
     "section": "Why this book is different",
-    "text": "Why this book is different\nMost spatial and data-science books in R assume you already know how to program and how to do statistics, which leaves beginners in the Earth and environmental sciences to bridge that gap on their own. This book closes it. It is a true on-ramp that takes you from your first command to research-ready analysis, using the real data of a changing planet."
+    "text": "Why this book is different\nMost spatial and data-science books in R assume you already know how to program and how to do statistics, which leaves beginners in the Earth and environmental sciences to bridge that gap on their own. This book closes it. It is a true on-ramp that takes you from your first command to research-ready analysis, using the real data of a changing planet.\nAcross many years of teaching R in Earth science, sustainability, and business, we kept seeing the same thing: students do not struggle with complexity, they struggle with abstraction. When an idea stays theoretical it slips away; when it becomes hands-on, it sticks. So this book is built to break the ice of coding, putting real data and real results in front of you from the first session.\nThis is a deliberate choice. The style may not match what seasoned R users expect, but for a genuine beginner it is exactly what makes coding finally click. The aim is not to memorize commands; it is to learn how to ask better questions of data, and to gain the confidence to keep asking them."
   },
   {
     "objectID": "book.html#authors",
@@ -158,7 +165,7 @@
     "href": "index.html",
     "title": "R for Earth and Sustainability Data Analytics",
     "section": "",
-    "text": "From GPS motion and Greenland’s vanishing ice to coastal flooding and global greenhouse-gas emissions, this book teaches you to analyze the data of a changing planet, using R, starting from zero.\nLearn to analyze real Earth and environmental data from scratch in R: no prior coding or statistics experience required."
+    "text": "From GPS motion and Greenland’s vanishing ice to coastal flooding and global greenhouse-gas emissions, this book teaches you to analyze the data of a changing planet, using R, starting from zero.\nLearn to analyze real Earth and environmental data from scratch in R: no prior coding or statistics experience required.\nThis book is built to break the ice of coding for complete beginners. You start by producing real results, and your confidence grows from there."
   },
   {
     "objectID": "index.html#who-this-is-for",
@@ -172,7 +179,14 @@
     "href": "index.html#what-makes-this-book-different",
     "title": "R for Earth and Sustainability Data Analytics",
     "section": "What makes this book different",
-    "text": "What makes this book different\n\nStart from zero. No prior coding or statistics needed. You begin by installing R and writing your first command.\nReal Earth data from day one. Every method is taught on actual datasets: GPS ground motion, Greenland ice loss, coastal flooding, and global emissions.\nThe whole modern toolkit. Data cleaning, GIS and mapping, time series, statistical modeling, and an introduction to machine learning, all in one beginner-friendly path.\nReproducible and reusable. Download the code and data, run it yourself, and adapt it to your own research.\n\n\nLearn R · Explore Earth"
+    "text": "What makes this book different\n\nStart from zero. No prior coding or statistics needed. You begin by installing R and writing your first command.\nReal Earth data from day one. Every method is taught on actual datasets: GPS ground motion, Greenland ice loss, coastal flooding, and global emissions.\nThe whole modern toolkit. Data cleaning, GIS and mapping, time series, statistical modeling, and an introduction to machine learning, all in one beginner-friendly path.\nReproducible and reusable. Download the code and data, run it yourself, and adapt it to your own research."
+  },
+  {
+    "objectID": "index.html#built-for-people-who-have-never-coded",
+    "href": "index.html#built-for-people-who-have-never-coded",
+    "title": "R for Earth and Sustainability Data Analytics",
+    "section": "Built for people who have never coded",
+    "text": "Built for people who have never coded\nWe have spent many years teaching R to students in Earth science, sustainability, and business who had never written a line of code, from high schoolers to graduate researchers. That experience shaped every page. We learned a simple lesson: beginners do not struggle with complexity, they struggle with abstraction. So this book keeps everything hands-on and shows real results from the very first session.\nThis approach is deliberate, and it may not look like a traditional R course. To an experienced programmer it can feel unusual. To a true beginner, it is what finally makes coding click. Seeing a real map or a real trend appear on screen early changes everything: it turns “I could never code” into “let me try the next one.”\n\nLearn R · Explore Earth"
   },
   {
     "objectID": "updates.html",

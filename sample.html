@@ -70,13 +70,13 @@ ul.task-list li input[type="checkbox"] {
 
 
 <meta property="og:title" content="Free Sample – R for Earth and Sustainability Data Analytics">
-<meta property="og:description" content="Learn to analyze real Earth and environmental data from scratch in R: no prior coding or statistics experience required.">
+<meta property="og:description" content="Learn to analyze real Earth and environmental data from scratch in R: no prior coding or statistics experience required. A beginner-first approach that breaks the ice of coding.">
 <meta property="og:image" content="https://marsellos.github.io/rgeo/assets/og-image.png">
 <meta property="og:site_name" content="R for Earth and Sustainability Data Analytics">
 <meta property="og:image:height" content="630">
 <meta property="og:image:width" content="1200">
 <meta name="twitter:title" content="Free Sample – R for Earth and Sustainability Data Analytics">
-<meta name="twitter:description" content="Learn to analyze real Earth and environmental data from scratch in R: no prior coding or statistics experience required.">
+<meta name="twitter:description" content="Learn to analyze real Earth and environmental data from scratch in R: no prior coding or statistics experience required. A beginner-first approach that breaks the ice of coding.">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -171,7 +171,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Want to try the book before you buy it? The free sample includes the full front matter plus Chapter 1, “Introduction to R” (about 60 pages). It is the same content and layout as the printed book, so you can see exactly how it teaches R from the very beginning.</p>
 <p>Chapter 1 walks you through installing R, running your first commands, and understanding how the language works, with no prior experience assumed.</p>
 <div style="text-align: center; margin-top: 1.5rem;">
-<p><a href="sample/R-GEO_sample_chapter1.pdf" class="btn btn-primary btn-lg">Download the free sample (PDF)</a></p>
+<p><a href="sample/R-GEO_sample_chapter1.pdf" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Download the free sample (PDF)</a></p>
 </div>
 
 
@@ -283,6 +283,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         if (link.dataset.originalHref !== undefined) {
           link.href = link.dataset.originalHref;
         }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {

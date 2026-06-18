@@ -175,8 +175,9 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p>From GPS motion and Greenland’s vanishing ice to coastal flooding and global greenhouse-gas emissions, this book teaches you to analyze the data of a changing planet, using R, starting from zero.</p>
 <p><strong>Learn to analyze real Earth and environmental data from scratch in R: no prior coding or statistics experience required.</strong></p>
+<p>This book is built to <strong>break the ice of coding</strong> for complete beginners. You start by producing real results, and your confidence grows from there.</p>
 <div style="text-align: center; margin-top: 1.5rem; margin-bottom: 1.5rem;">
-<p><a href="./sample.html" class="btn btn-primary btn-lg">Download the free sample</a> <!-- TODO: replace the placeholder href below with the live Amazon/KDP product link once the book is published. --> <a href="#" class="btn btn-outline-primary btn-lg">Get the book</a></p>
+<p><a href="sample/R-GEO_sample_chapter1.pdf" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Download the free sample</a> <!-- TODO: replace the placeholder href below with the live Amazon/KDP product link once the book is published. --> <a href="#" class="btn btn-outline-primary btn-lg">Get the book</a></p>
 </div>
 <section id="who-this-is-for" class="level2">
 <h2 class="anchored" data-anchor-id="who-this-is-for">Who this is for</h2>
@@ -190,6 +191,11 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>The whole modern toolkit.</strong> Data cleaning, GIS and mapping, time series, statistical modeling, and an introduction to machine learning, all in one beginner-friendly path.</li>
 <li><strong>Reproducible and reusable.</strong> Download the code and data, run it yourself, and adapt it to your own research.</li>
 </ul>
+</section>
+<section id="built-for-people-who-have-never-coded" class="level2">
+<h2 class="anchored" data-anchor-id="built-for-people-who-have-never-coded">Built for people who have never coded</h2>
+<p>We have spent many years teaching R to students in Earth science, sustainability, and business who had never written a line of code, from high schoolers to graduate researchers. That experience shaped every page. We learned a simple lesson: beginners do not struggle with complexity, they struggle with abstraction. So this book keeps everything hands-on and shows real results from the very first session.</p>
+<p>This approach is deliberate, and it may not look like a traditional R course. To an experienced programmer it can feel unusual. To a true beginner, it is what finally makes coding click. Seeing a real map or a real trend appear on screen early changes everything: it turns “I could never code” into “let me try the next one.”</p>
 <div style="text-align: center; font-size: 1.25rem; font-weight: 600; margin-top: 2rem;">
 <p>Learn R · Explore Earth</p>
 </div>
@@ -304,6 +310,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         if (link.dataset.originalHref !== undefined) {
           link.href = link.dataset.originalHref;
         }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {

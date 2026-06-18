@@ -70,13 +70,13 @@ ul.task-list li input[type="checkbox"] {
 
 
 <meta property="og:title" content="Updates &amp; Errata – R for Earth and Sustainability Data Analytics">
-<meta property="og:description" content="Learn to analyze real Earth and environmental data from scratch in R: no prior coding or statistics experience required.">
+<meta property="og:description" content="Learn to analyze real Earth and environmental data from scratch in R: no prior coding or statistics experience required. A beginner-first approach that breaks the ice of coding.">
 <meta property="og:image" content="https://marsellos.github.io/rgeo/assets/og-image.png">
 <meta property="og:site_name" content="R for Earth and Sustainability Data Analytics">
 <meta property="og:image:height" content="630">
 <meta property="og:image:width" content="1200">
 <meta name="twitter:title" content="Updates &amp; Errata – R for Earth and Sustainability Data Analytics">
-<meta name="twitter:description" content="Learn to analyze real Earth and environmental data from scratch in R: no prior coding or statistics experience required.">
+<meta name="twitter:description" content="Learn to analyze real Earth and environmental data from scratch in R: no prior coding or statistics experience required. A beginner-first approach that breaks the ice of coding.">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -304,6 +304,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         if (link.dataset.originalHref !== undefined) {
           link.href = link.dataset.originalHref;
         }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {

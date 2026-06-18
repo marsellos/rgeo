@@ -70,13 +70,13 @@ ul.task-list li input[type="checkbox"] {
 
 
 <meta property="og:title" content="About &amp; Resources – R for Earth and Sustainability Data Analytics">
-<meta property="og:description" content="Learn to analyze real Earth and environmental data from scratch in R: no prior coding or statistics experience required.">
+<meta property="og:description" content="Learn to analyze real Earth and environmental data from scratch in R: no prior coding or statistics experience required. A beginner-first approach that breaks the ice of coding.">
 <meta property="og:image" content="https://marsellos.github.io/rgeo/assets/og-image.png">
 <meta property="og:site_name" content="R for Earth and Sustainability Data Analytics">
 <meta property="og:image:height" content="630">
 <meta property="og:image:width" content="1200">
 <meta name="twitter:title" content="About &amp; Resources – R for Earth and Sustainability Data Analytics">
-<meta name="twitter:description" content="Learn to analyze real Earth and environmental data from scratch in R: no prior coding or statistics experience required.">
+<meta name="twitter:description" content="Learn to analyze real Earth and environmental data from scratch in R: no prior coding or statistics experience required. A beginner-first approach that breaks the ice of coding.">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -149,6 +149,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#authors" id="toc-authors" class="nav-link active" data-scroll-target="#authors">Authors</a></li>
+  <li><a href="#our-approach" id="toc-our-approach" class="nav-link" data-scroll-target="#our-approach">Our approach</a></li>
   <li><a href="#imprint" id="toc-imprint" class="nav-link" data-scroll-target="#imprint">Imprint</a></li>
   <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
   <li><a href="#contact" id="toc-contact" class="nav-link" data-scroll-target="#contact">Contact</a></li>
@@ -181,6 +182,11 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="authors">Authors</h2>
 <p><strong>Antonios E. Marsellos, Ph.D.</strong> teaches and researches in the Department of Geology, Environment, and Sustainability, Hofstra University.</p>
 <p><strong>Katerina G. Tsakiri, Ph.D.</strong> teaches and researches in the Department of Information Systems, Analytics and Supply Chain Management, Rider University.</p>
+</section>
+<section id="our-approach" class="level2">
+<h2 class="anchored" data-anchor-id="our-approach">Our approach</h2>
+<p>Between us we have spent many years teaching R to students in Earth science, sustainability, and business, including many who arrived with no coding experience at all, from high schoolers to graduate researchers. That experience taught us how to introduce R to true beginners: keep it hands-on, show real results early, and build confidence before theory. This book is the result. It is written to break the ice of coding for people who never thought they could code. The style may not be what experienced R users expect, but for beginners it is very effective.</p>
+<p>A guiding belief runs through all of it: students do not struggle with complexity, they struggle with abstraction. With the right approach, anyone can learn to think analytically, work with real data, and contribute to research, regardless of where they start.</p>
 </section>
 <section id="imprint" class="level2">
 <h2 class="anchored" data-anchor-id="imprint">Imprint</h2>
@@ -311,6 +317,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         if (link.dataset.originalHref !== undefined) {
           link.href = link.dataset.originalHref;
         }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
