@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Code &amp; Data – R for Earth and Sustainability Data Analytics</title>
+<title>For Instructors – R for Earth and Sustainability Data Analytics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -103,13 +69,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<meta property="og:title" content="Code &amp; Data – R for Earth and Sustainability Data Analytics">
+<meta property="og:title" content="For Instructors – R for Earth and Sustainability Data Analytics">
 <meta property="og:description" content="Learn to analyze real Earth and environmental data from scratch in R: no prior coding or statistics experience required. A beginner-first approach that breaks the ice of coding.">
 <meta property="og:image" content="https://marsellos.github.io/rgeo/assets/og-image.png">
 <meta property="og:site_name" content="R for Earth and Sustainability Data Analytics">
 <meta property="og:image:height" content="630">
 <meta property="og:image:width" content="1200">
-<meta name="twitter:title" content="Code &amp; Data – R for Earth and Sustainability Data Analytics">
+<meta name="twitter:title" content="For Instructors – R for Earth and Sustainability Data Analytics">
 <meta name="twitter:description" content="Learn to analyze real Earth and environmental data from scratch in R: no prior coding or statistics experience required. A beginner-first approach that breaks the ice of coding.">
 <meta name="twitter:image" content="https://marsellos.github.io/rgeo/assets/cover.png">
 <meta name="twitter:image-height" content="3300">
@@ -143,7 +109,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">The Book</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./code.html" aria-current="page"> 
+    <a class="nav-link" href="./code.html"> 
 <span class="menu-text">Code &amp; Data</span></a>
   </li>  
   <li class="nav-item">
@@ -155,7 +121,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Free Sample</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./instructors.html"> 
+    <a class="nav-link active" href="./instructors.html" aria-current="page"> 
 <span class="menu-text">For Instructors</span></a>
   </li>  
   <li class="nav-item">
@@ -193,8 +159,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#a-taste-of-the-code" id="toc-a-taste-of-the-code" class="nav-link active" data-scroll-target="#a-taste-of-the-code">A taste of the code</a></li>
-  <li><a href="#get-the-full-code" id="toc-get-the-full-code" class="nav-link" data-scroll-target="#get-the-full-code">Get the full code</a></li>
+  <li><a href="#what-is-in-the-package" id="toc-what-is-in-the-package" class="nav-link active" data-scroll-target="#what-is-in-the-package">What is in the package</a></li>
+  <li><a href="#preview-chapter-1" id="toc-preview-chapter-1" class="nav-link" data-scroll-target="#preview-chapter-1">Preview Chapter 1</a></li>
+  <li><a href="#request-the-full-package" id="toc-request-the-full-package" class="nav-link" data-scroll-target="#request-the-full-package">Request the full package</a></li>
   </ul>
 </nav>
     </div>
@@ -203,7 +170,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Code &amp; Data</h1>
+<h1 class="title">For Instructors</h1>
 </div>
 
 
@@ -220,75 +187,75 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Every example in the book is built with real, runnable R code. The complete, chapter-by-chapter code and the datasets that go with it are available to readers of the book.</p>
-<section id="a-taste-of-the-code" class="level2">
-<h2 class="anchored" data-anchor-id="a-taste-of-the-code">A taste of the code</h2>
-<p>Here is a short example of the kind of code you will write. It makes two small lists of numbers and plots them, just like the first plot in Chapter 1.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make two short lists of numbers (called vectors):</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># the day, and the rainfall in millimeters on each day</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>day <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>rainfall_mm <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">12</span>, <span class="dv">5</span>, <span class="dv">0</span>, <span class="dv">8</span>)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Look at the rainfall values</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>rainfall_mm</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot rainfall against day</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(day, rainfall_mm)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>In the book, examples like this grow step by step into full Earth-data analyses, with each line explained for beginners.</p>
+<p>Teaching from this book? There is a complete <strong>Instructor Resource Package</strong> that turns it into a ready-to-run course. It is free for verified instructors.</p>
+<section id="what-is-in-the-package" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-in-the-package">What is in the package</h2>
+<ul>
+<li><strong>Lecture slide decks for all seven chapters.</strong> Visual-first PowerPoint decks that follow the book chapter by chapter, built around the real figures from the book so what students see in class matches what they read.</li>
+<li><strong>A written instructor manual.</strong> Per-chapter teaching notes, lab activities, common student misconceptions and how to address them, discussion prompts, and a suggested teaching sequence.</li>
+<li><strong>An assessment bank.</strong> Ready-to-use questions and short problems mapped to each chapter.</li>
+<li><strong>Master grading rubrics.</strong> Reusable rubrics for code, analysis, and written interpretation.</li>
+<li><strong>Answer keys.</strong> Worked solutions for the lab activities and assessments.</li>
+</ul>
+<p>Because the package includes answer keys and an assessment bank, the full version is sent only to verified instructors. The Chapter 1 sample below is open to everyone.</p>
 </section>
-<section id="get-the-full-code" class="level2">
-<h2 class="anchored" data-anchor-id="get-the-full-code">Get the full code</h2>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<section id="preview-chapter-1" class="level2">
+<h2 class="anchored" data-anchor-id="preview-chapter-1">Preview Chapter 1</h2>
+<p>The free sample is the front matter (welcome, student success stories, the instructor language guide, and a sample syllabus) plus the complete Chapter 1 teaching module, so you can see the format and depth before requesting the rest. It contains no answer keys.</p>
+<div style="text-align: center; margin-top: 1.5rem; margin-bottom: 1.5rem;">
+<p><a href="sample/R-GEO_instructor_sample_chapter1.pdf" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Download the Chapter 1 instructor sample (PDF)</a></p>
 </div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>New to coding? You do not need anything installed to begin. The entire first chapter is free on the <a href="./sample.html">Free Sample</a> page. The complete code below is for when you want to run every example in the book yourself.</p>
-</div>
-</div>
-<p>The complete, chapter-by-chapter code and all of the datasets are free for readers of the book. Tell us where to send them and we will email you the download.</p>
+</section>
+<section id="request-the-full-package" class="level2">
+<h2 class="anchored" data-anchor-id="request-the-full-package">Request the full package</h2>
+<p>Tell us a little about your course and we will email the full Instructor Resource Package to your institutional address once we confirm your affiliation. Please use your university email so we can verify it.</p>
 <!-- Wired to the live Google Form (created via
-     scripts/create_code_request_form.gs). The action FORM_ID and the two
-     entry.* field names below are the form's real IDs; responses collect in
-     the "R-GEO Code & Data Requests" sheet in Drive. To rotate the form,
+     scripts/create_instructor_request_form.gs). The action FORM_ID and the
+     five entry.* field names below are the form's real IDs; responses collect
+     in the "R-GEO Instructor Requests" sheet in Drive. To rotate the form,
      re-run that script and replace the FORM_ID + entry IDs here. -->
-<form id="cd-form" target="cd-sink" method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSda0A6DOn_95zUguRMBD6Uwgt6VvnoaCDD1kjh2tGKonKWq6w/formResponse" style="max-width: 460px;">
+<form id="ip-form" target="ip-sink" method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSe1NMZgy-gILw8D_5ocUGZzC2rQnUtNV8D4d25HiOwJFFe3Kg/formResponse" style="max-width: 520px;">
   <div class="mb-3">
-    <label for="cd-name" class="form-label fw-semibold">Full name</label>
-    <input type="text" id="cd-name" name="entry.958120418" class="form-control" placeholder="Jane Doe" required="">
+    <label for="ip-name" class="form-label fw-semibold">Full name</label>
+    <input type="text" id="ip-name" name="entry.701625816" class="form-control" placeholder="Dr. Jane Doe" required="">
   </div>
   <div class="mb-3">
-    <label for="cd-email" class="form-label fw-semibold">Email address</label>
-    <input type="email" id="cd-email" name="entry.581622172" class="form-control" placeholder="you@example.com" required="">
+    <label for="ip-inst" class="form-label fw-semibold">Institution / university</label>
+    <input type="text" id="ip-inst" name="entry.237672299" class="form-control" placeholder="State University" required="">
   </div>
-  <button type="submit" class="btn btn-primary btn-lg">Email me the code &amp; data</button>
+  <div class="mb-3">
+    <label for="ip-email" class="form-label fw-semibold">Institutional email</label>
+    <input type="email" id="ip-email" name="entry.924109210" class="form-control" placeholder="you@university.edu" required="">
+  </div>
+  <div class="mb-3">
+    <label for="ip-course" class="form-label fw-semibold">Course name or number</label>
+    <input type="text" id="ip-course" name="entry.1599814784" class="form-control" placeholder="GEO 210: Environmental Data Analysis" required="">
+  </div>
+  <div class="mb-3">
+    <label for="ip-role" class="form-label fw-semibold">Role</label>
+    <input type="text" id="ip-role" name="entry.1104361841" class="form-control" placeholder="Professor / Instructor / Lecturer / TA" required="">
+  </div>
+  <button type="submit" class="btn btn-primary btn-lg">Request the package</button>
 </form>
-<iframe name="cd-sink" style="display:none" aria-hidden="true"></iframe>
-<div id="cd-done" style="display:none; margin-top:1rem; padding:1rem 1.25rem; border:1px solid #d7dbe2; border-radius:8px; background:#f1f3f6;">
-  <p style="margin:0; color:#1a7f37; font-weight:600;">Thank you. We will email the complete code and datasets to the address you gave, shortly.</p>
+<iframe name="ip-sink" style="display:none" aria-hidden="true"></iframe>
+<div id="ip-done" style="display:none; margin-top:1rem; padding:1rem 1.25rem; border:1px solid #d7dbe2; border-radius:8px; background:#f1f3f6;">
+  <p style="margin:0; color:#1a7f37; font-weight:600;">Thank you. We will verify your affiliation and email the full Instructor Resource Package to your institutional address, usually within a few business days.</p>
 </div>
-<p id="cd-note" style="display:none; margin-top:.6rem; color:#6b7280; font-size:.9rem;">
-  Note: the request form is not connected yet, so your request was not recorded. Please email <a href="mailto:amarsellos@gmail.com?subject=R-GEO%20code%20and%20data%20request">amarsellos@gmail.com</a> directly for now.
+<p id="ip-note" style="display:none; margin-top:.6rem; color:#6b7280; font-size:.9rem;">
+  Note: the request form is not connected yet, so your request was not recorded. Please email <a href="mailto:amarsellos@gmail.com?subject=Instructor%20Resource%20Package%20request">amarsellos@gmail.com</a> directly for now.
 </p>
 <script>
 (function(){
-  var f = document.getElementById('cd-form');
+  var f = document.getElementById('ip-form');
   if(!f){ return; }
   f.addEventListener('submit', function(e){
     var unwired = f.getAttribute('action').indexOf('FORM_ID_HERE') !== -1;
     if(unwired){
       e.preventDefault();
-      document.getElementById('cd-note').style.display = 'block';
+      document.getElementById('ip-note').style.display = 'block';
       return;
     }
-    document.getElementById('cd-done').style.display = 'block';
+    document.getElementById('ip-done').style.display = 'block';
   });
 })();
 </script>

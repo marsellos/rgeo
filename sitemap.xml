@@ -2,30 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://marsellos.github.io/rgeo/code.html</loc>
-    <lastmod>2026-06-18T15:01:03.046Z</lastmod>
+    <lastmod>2026-06-21T00:30:04.838Z</lastmod>
   </url>
   <url>
-    <loc>https://marsellos.github.io/rgeo/sample.html</loc>
-    <lastmod>2026-06-18T12:55:37.623Z</lastmod>
+    <loc>https://marsellos.github.io/rgeo/instructors.html</loc>
+    <lastmod>2026-06-21T00:30:10.526Z</lastmod>
   </url>
   <url>
-    <loc>https://marsellos.github.io/rgeo/datasets.html</loc>
-    <lastmod>2026-06-18T15:03:01.532Z</lastmod>
+    <loc>https://marsellos.github.io/rgeo/index.html</loc>
+    <lastmod>2026-07-04T08:43:34.388Z</lastmod>
+  </url>
+  <url>
+    <loc>https://marsellos.github.io/rgeo/book.html</loc>
+    <lastmod>2026-07-04T08:44:10.633Z</lastmod>
   </url>
   <url>
     <loc>https://marsellos.github.io/rgeo/about.html</loc>
     <lastmod>2026-06-18T15:01:03.045Z</lastmod>
   </url>
   <url>
-    <loc>https://marsellos.github.io/rgeo/book.html</loc>
-    <lastmod>2026-06-18T12:58:29.462Z</lastmod>
+    <loc>https://marsellos.github.io/rgeo/datasets.html</loc>
+    <lastmod>2026-06-18T15:03:01.532Z</lastmod>
   </url>
   <url>
-    <loc>https://marsellos.github.io/rgeo/index.html</loc>
-    <lastmod>2026-06-18T14:59:08.504Z</lastmod>
+    <loc>https://marsellos.github.io/rgeo/sample.html</loc>
+    <lastmod>2026-06-18T12:55:37.623Z</lastmod>
   </url>
   <url>
     <loc>https://marsellos.github.io/rgeo/updates.html</loc>
-    <lastmod>2026-06-18T15:01:03.046Z</lastmod>
+    <lastmod>2026-06-22T02:13:25.365Z</lastmod>
   </url>
 </urlset>
