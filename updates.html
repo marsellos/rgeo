@@ -193,19 +193,16 @@ ul.task-list li input[type="checkbox"] {
 <section id="get-the-free-cheat-sheet" class="level2">
 <h2 class="anchored" data-anchor-id="get-the-free-cheat-sheet">Get the free cheat sheet</h2>
 <p>Enter your email to get the free <strong>R for Earth Data: Quick-Start Cheat Sheet</strong>, a one-page PDF of the first commands from the book, so you can start in RStudio right away. You will also join the update list, so you hear about new editions, corrections, and added resources. We only email when there is something worth sharing, and you can ask to be removed at any time.</p>
-<!-- TO CONNECT THIS SIGNUP (Google Form -> Google Sheet), run the generator
-     scripts/create_cheatsheet_signup_form.gs once (about 3 clicks; see the
-     header in that file). It creates the form + a linked responses sheet and
-     prints the two values below. Then replace FORM_ID_HERE in the action and
-     entry.ENTRY_ID_HERE on the email field with the printed IDs, and every
-     submission collects in the "R-GEO Updates & Cheat-Sheet Signups" sheet.
-     Until both are real, the "not connected yet" note shows and the cheat-sheet
-     download below still works. (Same wiring as the code.qmd / instructors.qmd
+<!-- WIRED 2026-07-10 (generator script scripts/create_cheatsheet_signup_form.gs).
+     The action FORM_ID and the entry.* field name below are the form's real
+     IDs; submissions collect in the "R-GEO Updates & Cheat-Sheet Signups"
+     sheet in Drive. To rotate the form, re-run that script and replace the
+     FORM_ID + entry ID here. (Same wiring as the code.qmd / instructors.qmd
      forms.) -->
-<form id="cs-form" target="cs-sink" method="post" action="https://docs.google.com/forms/d/e/FORM_ID_HERE/formResponse" style="max-width: 460px;">
+<form id="cs-form" target="cs-sink" method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSc6JsZVW8KVkZbqJUwWwXGOy8HGvh_UEyq7EFUk5egcCcg7fw/formResponse" style="max-width: 460px;">
   <div class="mb-3">
     <label for="cs-email" class="form-label fw-semibold">Email address</label>
-    <input type="email" id="cs-email" name="entry.ENTRY_ID_HERE" class="form-control form-control-lg" placeholder="you@example.com" required="">
+    <input type="email" id="cs-email" name="entry.789126372" class="form-control form-control-lg" placeholder="you@example.com" required="">
   </div>
   <button type="submit" class="btn btn-primary btn-lg">Email me the cheat sheet</button>
 </form>
